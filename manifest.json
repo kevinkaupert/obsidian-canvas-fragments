@@ -1,0 +1,9 @@
+{
+  "id": "obsidian-canvas-fragments",
+  "name": "Canvas Fragments",
+  "version": "0.1.0",
+  "minAppVersion": "1.4.0",
+  "description": "Visual thinking on Canvas with atomic fragments and automated hub note generation",
+  "author": "Kevin Kaupert",
+  "isDesktopOnly": false
+}

@@ -1,0 +1,47 @@
+/* Clean Canvas: Hide frontmatter, properties, and titles in canvas cards & embeds */
+.canvas-node .metadata-container,
+.canvas-node .frontmatter-container,
+.canvas-node .inline-title,
+.canvas-node .markdown-embed-title {
+  display: none !important;
+}
+
+/* Seamless markdown embeds inside canvas cards */
+.canvas-node .markdown-embed {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Draft dot: hollow circle on unfiled text cards */
+.canvas-node.canvas-fragment-draft::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1.5px solid var(--text-faint);
+  background: transparent;
+  pointer-events: none;
+}
+
+/* Filed fragment badge: solid dot in accent color */
+.canvas-fragment-badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--interactive-accent);
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+.canvas-fragment-badge:hover {
+  transform: scale(1.3);
+  filter: brightness(1.2);
+}

@@ -1,0 +1,27 @@
+{
+  "name": "obsidian-canvas-fragments",
+  "version": "0.1.0",
+  "description": "Obsidian Canvas to atomic fragments and automated hub note generation",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "node esbuild.config.mjs production"
+  },
+  "keywords": [
+    "obsidian",
+    "canvas",
+    "fragments",
+    "zettelkasten",
+    "hub"
+  ],
+  "author": "Kevin Kaupert",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "^0.21.0",
+    "obsidian": "latest",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.0"
+  }
+}
